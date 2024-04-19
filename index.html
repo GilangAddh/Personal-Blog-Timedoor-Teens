@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adhi's Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="images/astronaut1.png">
+    </head>
+    <body>
+        <div class="splash">
+            <h1 class="splash-text" data-aos="fade-right" data-aos-duration="200">
+                Hello Guys!
+                <br>
+                Welcome to the club
+            </h1>
+            <img class="astronaut-dabbing" src="images/astronaut1.png" alt="">
+            <img class="astronaut-takeoff" src="images/astronaut2.png" alt="">
+        </div>
+        <header>
+            <section class="header">
+                <div class="title">
+                    <img src="./images/header-icon.png" class="logo" alt="">
+                    <h1>Adhi's Blog</h1>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="project.html">Project</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
+                </nav>
+            </section>
+            <section id="jumbotron">
+                <div class="jumbotron">
+                    <h1 class="jumbotron-title" onmouseover="changeTitle(this)" onmouseout="changeTitleBack(this)">
+                        Dapatkan Tips Programming Disini!
+                    </h1>
+                    <div class="header-flex">
+                        <div>
+                            <h2
+                                class="jumbotron-text"
+                                data-aos-once="true"
+                                data-aos-duration="2000"
+                                data-aos-delay="500"
+                                data-aos-easing="ease-in"
+                                data-aos="fade-down-right"
+                            >
+                                Baru di dunia Programming?
+                                <br>
+                                Belajar lewat pengembangan
+                                <span style="color: #f4a261;">
+                                    Game dan Web
+                                </span>
+                                sederhana!
+                            </h2>
+                            <div class="mini-text-flex">
+                                <p class="mini-text">
+                                    Belajar programming dasar disini
+                                </p>
+                                <button id="icon-up" onclick="changeText()">
+                                    <i class="far fa-hand-point-up"></i>
+                                </button>
+                                <button id="icon-down" class="icon-down">
+                                    <i class="far fa-hand-point-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <img
+                                onmouseover="changeImage(this)"
+                                onmouseout="changeImageBack(this)"
+                                class="jumbotron-img"
+                                src="images/img-header.png"
+                                alt=""
+                                width="auto"
+                                data-aos-offset="300"
+                                data-aos="fade-down-right"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <svg class="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#264653" fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,234.7C320,224,400,160,480,154.7C560,149,640,203,720,197.3C800,192,880,128,960,128C1040,128,1120,192,1200,202.7C1280,213,1360,171,1400,149.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+            <svg class="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#e7e7e7" fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,234.7C320,224,400,160,480,154.7C560,149,640,203,720,197.3C800,192,880,128,960,128C1040,128,1120,192,1200,202.7C1280,213,1360,171,1400,149.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+        </header>
+        <main>
+            <section id="slider" class="section-slider">
+                <div class="image-slider" data-aos="fade-down">
+                    <div class="slide active">
+                        <img src="images/game-development.jpg" alt="">
+                        <div class="slide-text">
+                            <h2>Game Development</h2>
+                            <p>Instead of playing game all day long, why not create your own?</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/apps.jpg" alt="">
+                        <div class="slide-text">
+                            <h2>Mobile Apps Development</h2>
+                            <p>Mobile apps are very popular and most needed in this world.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/web-design.jpg" alt="">
+                        <div class="slide-text">
+                            <h2>Web Design</h2>
+                            <p>Color, Transition, Animation are cool.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/web-development.jpg" alt="">
+                        <div class="slide-text">
+                            <h2>Web Development</h2>
+                            <p> Every company need website. Take advantage of that opportunity!</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/kids-programming.jpg" alt="">
+                        <div class="slide-text">
+                            <h2>Kids Programming</h2>
+                            <p>Better know earlier with a fun way of arranging blocks.</p>
+                        </div>
+                    </div>
+                    <!-- Copy paste div class slide di atas (tanpa kata active) sampai ada 5 buah div -->
+                    <div class="navigation">
+                        <div class="slider-btn active"></div>
+                        <div class="slider-btn"></div>
+                        <div class="slider-btn"></div>
+                        <div class="slider-btn"></div>
+                        <div class="slider-btn"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="main-content">
+                <aside>
+                    <div class="profile">
+                        <h3 class="aside-title">It’s Adhi</h3>
+                        <img
+                            class="profile-picture"
+                            src="images/icon.jpeg"
+                            alt="Cobee"
+                            width="100px"
+                            height="auto"
+                        >
+                        <div class="toggle">
+                            <button class="btn" id="green">
+                                <i class="fa fa-thumbs-up fa-lg"></i>
+                            </button>
+                            <button class="btn" id="red">
+                                <i class="fa fa-thumbs-down fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search-tags-container">
+                        <div class="input-tag">
+                            <h3 class="aside-title">Search Here</h3>
+                            <input id="myInput" type="text" placeholder="Search...">
+                            <span class="addBtn" onclick="newElement()">Search</span>
+                        </div>
+                        <ul id="myUL" class="search-tags-list">
+                            <li class="search-tags-item">HTML</li>
+                            <li class="search-tags-item">Code</li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="content">
+                    <article id="my-project">
+                        <h3 class="article-title">My Project</h3>
+                        <div class="project-container">
+                            <div class="project" data-aos="fade-right">
+                                <img
+                                    src="images/feeding-shark.png"
+                                    alt=""
+                                    width="300px"
+                                    height="210px"
+                                >
+                                <h4 class="project-title">Feeding Shark</h4>
+                                <p class="project-description">
+                                    Game memberi makan ikan hiu dengan platform Scratch
+                                </p>
+                            </div>
+                            <div class="project" data-aos="fade-left">
+                                <img
+                                    src="images/guest-the-flag.png"
+                                    alt=""
+                                    width="300px"
+                                    height="210px"
+                                >
+                                <h4 class="project-title">Guest The Flag</h4>
+                                <p class="project-description">
+                                    Game tebak nama negara dengan platform scratch
+                                </p>
+                            </div>
+                            <div class="project" data-aos="fade-right">
+                                <img
+                                    src="images/Clone-wars.png"
+                                    alt=""
+                                    width="300px"
+                                    height="210px"
+                                >
+                                <h4 class="project-title">Clone Wars</h4>
+                                <p class="project-description">
+                                    Game tembak tembakan pesawat dengan platform scratch
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="video">
+                        <div class="item-video">
+                            <div>
+                                <h3 class="article-title">What is Coding?</h3>
+                                <iframe
+                                    width="450"
+                                    height="325"
+                                    src="https://www.youtube.com/embed/N7ZmPYaXoic?si=3jyfNcxqEfBwfzdS"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div>
+                                <h3 class="article-title">
+                                    Coding is Not 
+                            Difficult!
+                                </h3>
+                                <iframe
+                                    width="450"
+                                    height="325"
+                                    src="https://www.youtube.com/embed/hb7Q33ysCwI?si=T7KJxLhYxdm5zS2s"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="maps">
+                        <div class="maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7545684238053!2d106.82237907589396!3d-6.552638993440427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c6ab905346c5%3A0x26fc9f7fef7f568b!2sSMKN%202%20Bogor!5e0!3m2!1sid!2sid!4v1705660949981!5m2!1sid!2sid"
+                                width="500"
+                                height="350"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="main-footer">
+                <h3 class="info-top">
+                    Cobee The Junior Programmer
+                </h3>
+                <div class="social-media">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <p class="info-center">
+                    Copyright &copy; 2021. 
+                Cobee. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="script.js">
+            var btnLike = document.querySelector("#green");
+var btnDislike = document.querySelector("#red");
+btnLike.onclick = likeColor;
+btnDislike.onclick = dislikeColor;
+function likeColor() {
+  if (btnDislike.classList.contains("red")) {
+    btnDislike.classList.remove("red");
+  }
+  this.classList.toggle("green");
+}
+function dislikeColor() {
+  if (btnLike.classList.contains("green")) {
+    btnLike.classList.remove("green");
+  }
+  this.classList.toggle("red");
+}
+        </script>
+        <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    </body>
+</html>
